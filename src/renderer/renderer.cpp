@@ -46,13 +46,13 @@ void Renderer::addGlyph(AtlasID atlas, uint16_t gx, uint16_t gy, uint16_t gw, ui
     auto &texData = batches[atlas].texData;
     auto &dirtyRect = batches[atlas].dirtyRect;
     auto width = batches[atlas].width;
-    uint stride = width;
+    unsigned stride = width;
 
     unsigned char* dst = &texData[(gx + pad) + (gy + pad) * stride];
 
-    uint pos = 0;
-    for (uint y = 0; y < gh; y++) {
-        for (uint x = 0; x < gw; x++) {
+    unsigned pos = 0;
+    for (unsigned y = 0; y < gh; y++) {
+        for (unsigned x = 0; x < gw; x++) {
             dst[x + (y * stride)] = src[pos++];
         }
     }

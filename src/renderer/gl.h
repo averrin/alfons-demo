@@ -23,8 +23,8 @@
 
 #ifdef PLATFORM_LINUX
 #define GL_GLEXT_PROTOTYPES 1
-#include <GL/gl.h>
-#include <GL/glext.h>
+#include <OpenGL/gl.h>
+#include <OpenGL/glext.h>
 //#define GL_GLEXT_PROTOTYPES
 //#include <GLFW/glfw3.h>
 #endif

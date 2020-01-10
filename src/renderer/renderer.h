@@ -101,14 +101,14 @@ private:
     int attributePos = 0;
     int attributeTex = 1;
 
-    uint idxCapacity = 0;
+    unsigned idxCapacity = 0;
 
-    uint vbo[2];
+    unsigned vbo[2];
     uint32_t m_state = 0;
 
-    std::vector<uint> textures;
+    std::vector<unsigned> textures;
 
-    void getIndices(uint capacity);
+    void getIndices(unsigned capacity);
     void drawVertices(QuadBatch& quads);
 
 #ifdef USE_SDF
